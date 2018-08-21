@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`item should render correctly wit all data 1`] = `
+<div>
+  <Link
+    component="./EditExpensePage.js"
+    replace={false}
+    to="/edit/1"
+  >
+    <h3>
+      gas bill
+    </h3>
+  </Link>
+  <p>
+    5
+     - 
+  </p>
+</div>
+`;
