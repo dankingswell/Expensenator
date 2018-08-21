@@ -18,13 +18,13 @@ import {Provider} from "react-redux"
 
 const store = configureStore(); 
 
-store.dispatch(addExpense({description: "gas bill", amount:500}))
-store.dispatch(addExpense({description:"water bill", amount: 100}))
-store.dispatch(addExpense({description:"fan", amount:30}))
-store.dispatch(addExpense({description:"rent", amount:1999}))
+// store.dispatch(addExpense({description: "gas bill", amount:500}))
+// store.dispatch(addExpense({description:"water bill", amount: 100}))
+// store.dispatch(addExpense({description:"fan", amount:30}))
+// store.dispatch(addExpense({description:"rent", amount:1999}))
 
 
-//console.log(getVisibileExpenses(store.getState().expenses, store.getState().filters ))
+// //console.log(getVisibileExpenses(store.getState().expenses, store.getState().filters ))
 
 
 // wrapping in Provider tag and passing store
