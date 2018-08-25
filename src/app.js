@@ -25,10 +25,9 @@ const store = configureStore();
 // store.dispatch(addExpense({description:"fan", amount:3}))
 // store.dispatch(addExpense({description:"rent", amount:1999, created}))
 
-for(let i = 0; i < expenses.length; i++){
-    store.dispatch(addExpense({... expenses[i], createdAt:moment()}))
-};
-
+// for(let i = 0; i < expenses.length; i++){
+//     store.dispatch(addExpense({... expenses[i], createdAt:moment()}))
+// };
 
 
 // //console.log(getVisibileExpenses(store.getState().expenses, store.getState().filters ))
