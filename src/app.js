@@ -5,6 +5,8 @@ import "normalize.css/normalize.css"
 import "./styles/styles.scss"
 import AppRouter from "./routers/AppRouter"
 import "react-dates/lib/css/_datepicker.css"
+import expenses from "../src/tests/fixture/expenses"
+import moment from "moment"
 
 
 //redux
@@ -20,8 +22,13 @@ const store = configureStore();
 
 // store.dispatch(addExpense({description: "gas bill", amount:500}))
 // store.dispatch(addExpense({description:"water bill", amount: 100}))
-// store.dispatch(addExpense({description:"fan", amount:30}))
-// store.dispatch(addExpense({description:"rent", amount:1999}))
+// store.dispatch(addExpense({description:"fan", amount:3}))
+// store.dispatch(addExpense({description:"rent", amount:1999, created}))
+
+for(let i = 0; i < expenses.length; i++){
+    store.dispatch(addExpense({... expenses[i], createdAt:moment()}))
+};
+
 
 
 // //console.log(getVisibileExpenses(store.getState().expenses, store.getState().filters ))
