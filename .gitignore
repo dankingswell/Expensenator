@@ -2,7 +2,4 @@ node_modules/
 .vscode/
 yarn-error.log
 package-lock.json
-styles.css
-styles.css.map
-bundle.js
-bundle.js.map
+public/dist/
