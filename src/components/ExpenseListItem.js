@@ -1,6 +1,8 @@
-import React from "react"
-import {removeExpense} from "../actions/expenses"
-import { Link } from "react-router-dom"
+import React from "react";
+import {removeExpense} from "../actions/expenses";
+import { Link } from "react-router-dom";
+import moment from "moment";
+import numeral from "numeral";
 
 
 const ExpenseListItem = ({description, amount, createdAt,dispatch,id}) => (
@@ -9,9 +11,12 @@ const ExpenseListItem = ({description, amount, createdAt,dispatch,id}) => (
             <h3>{description}</h3>
         </Link>
 
-        <p>{amount/100} - {createdAt}</p>
+        <p>
+        {`£${numeral(amount/100).format("0,0.00")}
+           -  ${moment(createdAt).format("Do MMMM YY")}`}
+        </p>
         
     </div>
     );
 
-export default ExpenseListItem
+export default ExpenseListItem;

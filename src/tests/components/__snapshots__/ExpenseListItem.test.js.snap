@@ -12,8 +12,8 @@ exports[`item should render correctly wit all data 1`] = `
     </h3>
   </Link>
   <p>
-    5
-     - 
+    £5.00
+           -  1st January 70
   </p>
 </div>
 `;
