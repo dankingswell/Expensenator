@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`summary header should render correctly 1`] = `
+<div>
+  <p>
+    Showing undefined
+             expense
+             , Total amount: £undefined
+  </p>
+</div>
+`;

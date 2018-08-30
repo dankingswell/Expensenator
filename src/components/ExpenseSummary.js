@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import getTotalOfCurrentExpenses from "../selectors/expenseHeader"
 import selectExpenses from "../selectors/expenses"
 
-const expenseHeader = (props) => (
+export const ExpenseHeader = (props) => (
     <div>
         <p>
             {`Showing ${props.numberOfExpenses}
@@ -21,4 +21,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(expenseHeader);
+export default connect(mapStateToProps)(ExpenseHeader);
